@@ -1,4 +1,4 @@
-import get_color_from_pair_number,get_pair_number_from_color from get_color_pairnumber_combo
+from get_color_pairnumber_combo import get_color_from_pair_number,get_pair_number_from_color 
 
 MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
 MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
