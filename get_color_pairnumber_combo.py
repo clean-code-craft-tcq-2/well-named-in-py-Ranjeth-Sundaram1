@@ -3,9 +3,6 @@ MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
 MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
 
 
-def color_pair_to_string(major_color, minor_color) -> str :
-    return f'{major_color} {minor_color}'
-
 def get_color_from_pair_number(pair_number) -> int:
     zero_based_pair_number = pair_number - 1
     major_index = zero_based_pair_number // len(MINOR_COLORS)
@@ -29,6 +26,6 @@ def get_pair_number_from_color(major_color, minor_color):
 
 def print_color_number_combo():
     print ('Pair number | Major color | Minor color \n')
-    for number in range (1, (len(MINOR_COLORS)*len(MAJOR_COLORS))+1):
-        Major_color, Minor_color = get_color_from_pair_number(number)
-        print (f'{number} | {Major_color} | {Minor_color} \n')
+    for number in range (len(MINOR_COLORS)*len(MAJOR_COLORS)):
+        Major_color, Minor_color = get_color_from_pair_number(number+1)
+        print (f'{number} | {Major_color} | {Minor_color}')
