@@ -24,7 +24,7 @@ def get_pair_number_from_color(major_color, minor_color):
         raise Exception('Minor index out of range')
     return major_index * len(MINOR_COLORS) + minor_index + 1
 
-def print_color_number_combo():
+def print_color_number_mapping():
     print ('Pair number | Major color | Minor color \n')
     for number in range (len(MINOR_COLORS)*len(MAJOR_COLORS)):
         Major_color, Minor_color = get_color_from_pair_number(number+1)
