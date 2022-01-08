@@ -2,7 +2,6 @@
 MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
 MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
 
-
 def get_color_from_pair_number(pair_number) -> int:
     zero_based_pair_number = pair_number - 1
     major_index = zero_based_pair_number // len(MINOR_COLORS)
@@ -24,7 +23,7 @@ def get_pair_number_from_color(major_color, minor_color):
         raise Exception('Minor index out of range')
     return major_index * len(MINOR_COLORS) + minor_index + 1
 
-def print_color_number_mapping():
+def print_color_pair_number_mapping():
     print ('Pair number | Major color | Minor color \n')
     for number in range (len(MINOR_COLORS)*len(MAJOR_COLORS)):
         Major_color, Minor_color = get_color_from_pair_number(number+1)
