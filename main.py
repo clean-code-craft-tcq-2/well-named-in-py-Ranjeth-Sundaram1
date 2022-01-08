@@ -1,6 +1,6 @@
-from test_color_number_combo import test_number_to_pair
-from test_color_number_combo import test_pair_to_number
-from get_color_number_combo import print_color_number_combo
+from test_color_number_maping import test_number_to_pair
+from test_color_number_mapping import test_pair_to_number
+from get_color_number_mapping import print_color_number_mapping
 
 if __name__ == '__main__':
     
