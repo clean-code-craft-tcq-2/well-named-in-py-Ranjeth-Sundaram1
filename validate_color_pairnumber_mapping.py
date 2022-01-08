@@ -1,4 +1,6 @@
-from get_color_pairnumber_combo import get_color_from_pair_number,get_pair_number_from_color,print_color_number_combo
+from get_color_pairnumber_combo import get_color_from_pair_number
+from get_color_pairnumber_combo import get_pair_number_from_color
+from get_color_pairnumber_combo import print_color_number_combo
 
 def test_number_to_pair(pair_number,
                         expected_major_color, expected_minor_color):
